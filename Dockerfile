@@ -14,8 +14,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Set up Git configuration
-RUN git config --global user.name "Apoorv" \
-    && git config --global user.email "apoorv.gupta65@gmail.com"
+RUN git config --global user.name "Apoorv" && git config --global user.email "apoorv.gupta65@gmail.com"
 
 # Make sure the script is executable 
 RUN chmod +x git-auto.sh
