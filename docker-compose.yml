@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  gitautomate:
+    build: .
+    container_name: gitautomatetool
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8080:8080"
+    command: ./git-auto.sh

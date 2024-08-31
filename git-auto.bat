@@ -1,8 +1,9 @@
 @echo off
 
+git branch -M main
+
 if not exist .git (
     git init
-    git branch -M main
     git remote add origin https://github.com/StephCurry07/git-automate.git
 )
 
